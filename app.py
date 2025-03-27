@@ -1,12 +1,6 @@
 import streamlit as st
 import time
 
-# Hide Streamlit sidebar using CSS
-st.markdown("""
-    <style>
-        [data-testid="stSidebar"] {display: none;}
-    </style>
-""", unsafe_allow_html=True)
 
 # User credentials
 faculty_emails = {"vidyasagar@nmims.in", "wasiha@nmims.in", "vinayak@nmims.in"}
@@ -14,7 +8,7 @@ coordinator_email = "pavani@nmims.in"
 schoolhead_email = "chandrakant@nmims.in"
 
 # Streamlit Page Configuration
-st.set_page_config(page_title="ReClassify Login", page_icon="📅", layout="centered")
+st.set_page_config(page_title="ReClassify Login", page_icon="📅", layout="centered", initial_sidebar_state="collapsed")
 
 # Centered Layout with Logo
 st.image("logo.png", width=200)
