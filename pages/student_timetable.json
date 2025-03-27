@@ -1,0 +1,150 @@
+{
+    "Batch 2027: CDDS": [
+        [
+            "9:00 am to 10:00 am",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-"
+        ],
+        [
+            "10:00 am to 11:00 am",
+            "LIBRARY",
+            "DBMS LAB",
+            "WP",
+            "WP LAB",
+            "IDS&IA ",
+            "SM"
+        ],
+        [
+            "11:00 am to 12:00 pm",
+            "ML",
+            "DBMS LAB",
+            "WP",
+            "WP LAB",
+            "IDS&IA LAB",
+            "SM LAB"
+        ],
+        [
+            "12:00 pm to 1:00 pm",
+            "LIBRARY",
+            "LIBRARY",
+            "ML",
+            "DBMS",
+            "IDS&IA LAB",
+            "SM"
+        ],
+        [
+            "2:00 pm to 3:00 pm",
+            "LIBRARY",
+            "DMBS",
+            "ML LAB",
+            "LIBRARY",
+            "IDS&IA",
+            "SM"
+        ],
+        [
+            "3:00 pm to 4:00 pm",
+            "DHV",
+            "ML",
+            "ML LAB",
+            "LIBRARY",
+            "IDS&IA",
+            "-"
+        ],
+        [
+            "4:00 pm to 5:00 pm",
+            "DHV LAB",
+            "-",
+            "LIBRARY",
+            "LIBRARY",
+            "LIBRARY",
+            "-"
+        ],
+        [
+            "5:00 pm to 6:00 pm",
+            "DHV LAB",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-"
+        ]
+    ],
+    "Batch 2028: CDDS A1": [
+        [
+            "9:00 am to 10:00 am",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-"
+        ],
+        [
+            "10:00 am to 11:00 am",
+            "LIBRARY",
+            "DML LAB",
+            "LIBRARY",
+            "PHY LAB",
+            "DCCA LAB",
+            "-"
+        ],
+        [
+            "11:00 am to 12:00 pm",
+            "LADE",
+            "DML LAB",
+            "PEM",
+            "PHY LAB",
+            "DCCA LAB",
+            "-"
+        ],
+        [
+            "12:00 pm to 1:00 pm",
+            "PHY",
+            "PEM",
+            "ES",
+            "PEM",
+            "LADE",
+            "LADE"
+        ],
+        [
+            "2:00 pm to 3:00 pm",
+            "PDA LAB",
+            "PHY",
+            "CT",
+            "EEWS LAB",
+            "DCCA",
+            "LIBRARY"
+        ],
+        [
+            "3:00 pm to 4:00 pm",
+            "PDA LAB",
+            "CT",
+            "LADE TUT",
+            "EEWS LAB",
+            "PHY",
+            "-"
+        ],
+        [
+            "4:00 pm to 5:00 pm",
+            "LIBRARY",
+            "DCCA",
+            "DCCA",
+            "ES TUT",
+            "PDA",
+            "-"
+        ],
+        [
+            "5:00 pm to 6:00 pm",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-"
+        ]
+    ]
+}

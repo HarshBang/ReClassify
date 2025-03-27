@@ -1,0 +1,28 @@
+{
+    "Wasiha Tasneem": {
+        "Monday": {
+            "10:00 am to 11:00 am": {
+                "subject": "ADSA",
+                "leave_type": "Official Leave In-campus"
+            }
+        },
+        "Thursday": {
+            "10:00 am to 11:00 am": {
+                "subject": "PDA LAB B2",
+                "leave_type": "Personal Leave"
+            },
+            "11:00 am to 12:00 pm": {
+                "subject": "PDA LAB B2",
+                "leave_type": "Personal Leave"
+            },
+            "12:00 pm to 1:00 pm": {
+                "subject": "DBMS",
+                "leave_type": "Personal Leave"
+            },
+            "2:00 pm to 3:00 pm": {
+                "subject": "DAA",
+                "leave_type": "Personal Leave"
+            }
+        }
+    }
+}
