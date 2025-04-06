@@ -1,8 +1,5 @@
 bcrypt
 streamlit
-time
 pandas
-json
 seaborn
-matplolib
-collections
+matplotlib
