@@ -1,6 +1,9 @@
 import pandas as pd
 import streamlit as st
 import json
+st.set_page_config(initial_sidebar_state="collapsed")
+st.sidebar.image("logo.png")  # Display Logo
+st.image("logo.png", width = 300)
 
 FACULTY_TIMETABLE_FILE = "pages/faculty_timetable.json"
 CANCELLATION_FILE = "pages/cancellations.json"
@@ -164,3 +167,10 @@ def faculty_dashboard(email):
         st.warning("No timetable found for you!")
 
 faculty_dashboard(email="wasiha@nmims.edu")
+
+
+# -- logout button --
+if st.button("Logout"):
+    st.session_state.authenticated = False
+    st.session_state.user_email = ""
+    st.switch_page("app.py")

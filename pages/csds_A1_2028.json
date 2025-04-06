@@ -1,0 +1,70 @@
+{
+    "Batch 2028: CSDS A1": {
+      "timetable": [
+        {
+          "Timings": "10:00 - 11:00",
+          "Monday": {"subject": "LIBRARY", "faculty": "", "location": "Library"},
+          "Tuesday": {"subject": "DML/EEWS LAB", "faculty": "Prof. Chandrakant Wani / Prof. Vinayak Mukkawar", "location": "Computer Lab4 / EEWS LAB"},
+          "Wednesday": {"subject": "LIBRARY", "faculty": "", "location": "Library"},
+          "Thursday": {"subject": "PDA/PHY LAB", "faculty": "Prof. Wasiha Tasneem / Dr. Soumyajit Seth", "location": "Computer Lab1 / PHY LAB"},
+          "Friday": {"subject": "DCCA LAB", "faculty": "Dr. Rahul Koshti", "location": "Computer Lab5"},
+          "Saturday": {"subject": "DCCA LAB", "faculty": "Dr. Rahul Koshti", "location": "Computer Lab5"}
+        },
+        {
+          "Timings": "11:00 - 12:00",
+          "Monday": {"subject": "LADE", "faculty": "Dr. V. Vidyasagar", "location": "L6"},
+          "Tuesday": {"subject": "DML/EEWS LAB", "faculty":"Prof. Chandrakant Wani / Prof. Vinayak Mukkawar", "location": "Computer Lab4 / EEWS LAB"},
+          "Wednesday": {"subject": "PEM", "faculty": "Dr. Shadman", "location": "L6"},
+          "Thursday": {"subject": "PDA/PHY LAB", "faculty": "Prof. Wasiha Tasneem / Dr. Soumyajit Seth", "location": "Computer Lab1 / PHY LAB"},
+          "Friday": {"subject": "DCCA LAB", "faculty": "Dr. Rahul Koshti", "location": "Computer Lab5"},
+          "Saturday": {"subject": "DCCA LAB", "faculty": "Dr. Rahul Koshti", "location": "Computer Lab5"}
+        },
+        {
+          "Timings": "12:00 - 1:00",
+          "Monday": {"subject": "PEM", "faculty": "Dr. Shadman", "location": "L6"},
+          "Tuesday": {"subject": "PEM", "faculty": "Dr. Sai Sailaja", "location": "L6"},
+          "Wednesday": {"subject": "ES", "faculty": "Dr. Sai Sailaja", "location": "L6"},
+          "Thursday": {"subject": "PEM", "faculty": "Dr. Shadman", "location": "L6"},
+          "Friday": {"subject": "LADE", "faculty": "Dr. V. Vidyasagar", "location": "L6"},
+          "Saturday": {"subject": "LADE", "faculty": "Dr. V. Vidyasagar", "location": "L6"}
+        },
+        {
+          "Timings": "1:00 - 2:00",
+          "Monday": {"subject": "Lunch Break", "faculty": "", "location": ""},
+          "Tuesday": {"subject": "Lunch Break", "faculty": "", "location": ""},
+          "Wednesday": {"subject": "Lunch Break", "faculty": "", "location": ""},
+          "Thursday": {"subject": "Lunch Break", "faculty": "", "location": ""},
+          "Friday": {"subject": "Lunch Break", "faculty": "", "location": ""},
+          "Saturday": {"subject": "Lunch Break", "faculty": "", "location": ""}
+        },
+        {
+          "Timings": "2:00 - 3:00",
+          "Monday": {"subject": "PDA/PHY LAB", "faculty": "Prof. Wasiha Tasneem / Dr. Soumyajit Seth", "location": "Computer Lab1 / PHY LAB"},
+          "Tuesday": {"subject": "PHY", "faculty": "Dr. Soumyajit Seth", "location": "L6"},
+          "Wednesday": {"subject": "CT", "faculty": "Dr. Vaishnavi M", "location": "L6"},
+          "Thursday": {"subject": "DML/EEWS LAB", "faculty": "Prof. Chandrakant Wani / Prof. Vinayak Mukkawar", "location": "Computer Lab4 / EEWS LAB"},
+          "Friday": {"subject": "DCCA", "faculty": "Dr. Rahul Koshti", "location": "L6"},
+          "Saturday": {"subject": "LIBRARY", "faculty": "", "location": "Library"}
+        },
+        {
+          "Timings": "3:00 - 4:00",
+          "Monday": {"subject": "PDA/PHY LAB", "faculty": "Prof. Wasiha Tasneem / Dr. Soumyajit Seth", "location": "Computer Lab1 / PHY LAB"},
+          "Tuesday": {"subject": "CT", "faculty": "Dr. Vaishnavi M", "location": "L6"},
+          "Wednesday": {"subject": "LADE/ES Tut", "faculty": "Dr. V. Vidyasagar / Dr. Sai Sailaja", "location": "L6"},
+          "Thursday": {"subject": "DML/EEWS LAB", "faculty": "Prof. Chandrakant Wani / Prof. Vinayak Mukkawar", "location": "Computer Lab4 / EEWS LAB"},
+          "Friday":{"subject": "PHY", "faculty": "Dr. Soumyajit Seth", "location": "L6"},
+          "Saturday": {"subject": "Students Activity", "faculty": "", "location": ""}
+        },
+        {
+          "Timings": "4:00 - 5:00",
+          "Monday": {"subject": "LIBRARY", "faculty": "", "location": "Library"},
+          "Tuesday": {"subject": "DCCA", "faculty": "Dr. Rahul Koshti", "location": "L6"},
+          "Wednesday": {"subject": "DCCA", "faculty": "Dr. Rahul Koshti", "location": "L6"},
+          "Thursday": {"subject": "LADE/ES Tut", "faculty": "Dr. V. Vidyasagar / Dr. Sai Sailaja", "location": "L6"},
+          "Friday":{"subject": "PDA (Theory)", "faculty": "Prof. Wasiha Tasneem", "location": "Computer Lab1"},
+          "Saturday": {"subject": "", "faculty": "", "location": ""}
+        }
+      ]
+    }
+  }
+  

@@ -1,5 +1,5 @@
 {
-    "Batch 2027: CSDS": [
+    "Batch 2026: CSDS": [
         [
             "9:00 am to 10:00 am",
             "-",
@@ -11,62 +11,62 @@
         ],
         [
             "10:00 am to 11:00 am",
+            "ADSA",
             "LIBRARY",
-            "DBMS LAB",
-            "WP",
-            "WP LAB",
-            "IDS&IA ",
-            "SM"
+            "RM",
+            "RM",
+            "ADSA",
+            "PA"
         ],
         [
             "11:00 am to 12:00 pm",
-            "ML",
-            "DBMS LAB",
-            "WP",
-            "WP LAB",
-            "IDS&IA LAB",
-            "SM LAB"
+            "LIBRARY",
+            "VCC",
+            "ADSA LAB",
+            "VCC LAB",
+            "LIBRARY",
+            "PA LAB"
         ],
         [
             "12:00 pm to 1:00 pm",
             "LIBRARY",
-            "LIBRARY",
-            "ML",
-            "DBMS",
-            "IDS&IA LAB",
-            "SM"
+            "RM",
+            "ADSA LAB",
+            "VCC LAB",
+            "OE",
+            "PA LAB"
         ],
         [
             "2:00 pm to 3:00 pm",
-            "LIBRARY",
-            "DMBS",
-            "ML LAB",
-            "LIBRARY",
-            "IDS&IA",
-            "SM"
+            "AAI",
+            "AAI",
+            "IS LAB ",
+            "VCC ",
+            "NNDL",
+            "PA"
         ],
         [
             "3:00 pm to 4:00 pm",
-            "DHV",
-            "ML",
-            "ML LAB",
-            "LIBRARY",
-            "IDS&IA",
+            "OE",
+            "AAI",
+            "IS LAB ",
+            "OE",
+            "NNDL LAB",
             "-"
         ],
         [
             "4:00 pm to 5:00 pm",
-            "DHV LAB",
-            "-",
+            "LIBRARY",
+            "AAI LAB",
             "LIBRARY",
             "LIBRARY",
-            "LIBRARY",
+            "NNDL LAB",
             "-"
         ],
         [
             "5:00 pm to 6:00 pm",
-            "DHV LAB",
             "-",
+            "AAI LAB",
             "-",
             "-",
             "-",
@@ -140,6 +140,80 @@
         [
             "5:00 pm to 6:00 pm",
             "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-"
+        ]
+    ],
+    "Batch 2027: CSDS": [
+        [
+            "9:00 am to 10:00 am",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-"
+        ],
+        [
+            "10:00 am to 11:00 am",
+            "LIBRARY",
+            "DBMS LAB",
+            "WP",
+            "WP LAB",
+            "IDS&IA ",
+            "SM"
+        ],
+        [
+            "11:00 am to 12:00 pm",
+            "ML",
+            "DBMS LAB",
+            "WP",
+            "WP LAB",
+            "IDS&IA LAB",
+            "SM LAB"
+        ],
+        [
+            "12:00 pm to 1:00 pm",
+            "LIBRARY",
+            "LIBRARY",
+            "ML",
+            "DBMS",
+            "IDS&IA LAB",
+            "SM"
+        ],
+        [
+            "2:00 pm to 3:00 pm",
+            "LIBRARY",
+            "DMBS",
+            "ML LAB",
+            "LIBRARY",
+            "IDS&IA",
+            "SM"
+        ],
+        [
+            "3:00 pm to 4:00 pm",
+            "DHV",
+            "ML",
+            "ML LAB",
+            "LIBRARY",
+            "IDS&IA",
+            "-"
+        ],
+        [
+            "4:00 pm to 5:00 pm",
+            "DHV LAB",
+            "-",
+            "LIBRARY",
+            "LIBRARY",
+            "LIBRARY",
+            "-"
+        ],
+        [
+            "5:00 pm to 6:00 pm",
+            "DHV LAB",
             "-",
             "-",
             "-",

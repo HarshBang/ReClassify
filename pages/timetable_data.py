@@ -1,4 +1,5 @@
 import json
+import os
 
 # Storage files
 STUDENT_TIMETABLE_FILE = "student_timetable.json"
@@ -29,3 +30,21 @@ def load_faculty_timetable():
 def save_faculty_timetable(faculty_timetable):
     with open(FACULTY_TIMETABLE_FILE, "w") as file:
         json.dump(faculty_timetable, file, indent=4)
+
+
+import json
+import os
+
+def load_csds_A1_2028():
+    # Get the absolute path to the directory where this file resides
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    # Construct the path to your JSON file
+    file_path = os.path.join(base_dir, "csds_A1_2028.json")
+    try:
+        with open(file_path, "r") as f:
+            data = json.load(f)
+        return data
+    except Exception as e:
+        print("Error loading JSON:", e)
+        return {}
+

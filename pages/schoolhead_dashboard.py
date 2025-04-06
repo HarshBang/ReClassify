@@ -4,15 +4,19 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from collections import defaultdict
-
-st.image("logo.png", width=400)
-
+st.set_page_config(initial_sidebar_state="collapsed")
+st.sidebar.image("logo.png") 
+st.image("logo.png", width = 300)
 # Load JSON Data
+def load_json(filename):
+    with open(filename, "r") as file:
 def load_json(filename):
     with open(filename, "r") as file:
         return json.load(file)
 
 # Load data
+cancellation_data = load_json("pages/cancellations.json")
+faculty_timetable = load_json("pages/faculty_timetable.json")
 cancellation_data = load_json("pages/cancellations.json")
 faculty_timetable = load_json("pages/faculty_timetable.json")
 
@@ -43,7 +47,9 @@ filtered_data = df_cancellation[df_cancellation["Faculty"] == selected_faculty]
 if not filtered_data.empty:
     faculty_table = []
     
+    
     # Days mapping to index positions
+    days_mapping = {"Monday": 0, "Tuesday": 1, "Wednesday": 2, "Thursday": 3, "Friday": 4, "Saturday": 5}
     days_mapping = {"Monday": 0, "Tuesday": 1, "Wednesday": 2, "Thursday": 3, "Friday": 4, "Saturday": 5}
 
     for _, row in filtered_data.iterrows():
@@ -51,9 +57,21 @@ if not filtered_data.empty:
         time_slot = row["Time Slot"]
         
         if day_index is None:
+        time_slot = row["Time Slot"]
+        
+        if day_index is None:
             continue  # Skip invalid entries
 
         available_faculty = []
+        
+        # Check each faculty's timetable
+        for faculty, schedule in faculty_timetable.items():
+            if time_slot in [slot[0] for slot in schedule]:  # Ensure time slot exists
+                time_slot_index = [slot[0] for slot in schedule].index(time_slot)
+                
+                if schedule[time_slot_index][day_index + 1] == "-":  # Check if slot is free
+                    available_faculty.append(faculty)
+        
         
         # Check each faculty's timetable
         for faculty, schedule in faculty_timetable.items():
@@ -173,3 +191,9 @@ ax.set_xlabel("Subject")
 ax.set_title("Cancellations per Subject")
 plt.xticks(rotation=0)  # Labels Horizontal
 st.pyplot(fig)
+
+# -- logout button --
+if st.button("Logout"):
+    st.session_state.authenticated = False
+    st.session_state.user_email = ""
+    st.switch_page("app.py")

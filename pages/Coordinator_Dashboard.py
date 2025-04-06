@@ -1,11 +1,12 @@
 import streamlit as st
 import pandas as pd
 from pages import timetable_data  # Import the storage script
-
+st.set_page_config(initial_sidebar_state="collapsed")
+st.sidebar.image("logo.png") 
 # Batch & Faculty Data
 batch_list = [
-    "Batch 2028: CDDS A1", "Batch 2028: CDDS A2", "Batch 2028: CDDS B1", "Batch 2028: CDDS B2",
-    "Batch 2028: CE C1", "Batch 2028: CE C2", "Batch 2027: CDDS", "Batch 2027: CE", "Batch 2026: CDDS"
+    "Batch 2028: CSDS A1", "Batch 2028: CSDS A2", "Batch 2028: CSDS B1", "Batch 2028: CSDS B2",
+    "Batch 2028: CE C1", "Batch 2028: CE C2", "Batch 2027: CSDS", "Batch 2027: CE", "Batch 2026: CSDS"
 ]
 faculty_list = ["Dr. V Vidyasagar", "Dr. Rahul Koshti", "Wasiha Tasneem"]
 
@@ -21,7 +22,7 @@ timetable = timetable_data.load_timetable()
 faculty_timetable = timetable_data.load_faculty_timetable()
 
 st.title("Academic Coordinator Dashboard")
-st.sidebar.image("logo.png", use_container_width=True)  # Display Logo
+st.image("logo.png", width = 300)
 
 # ---- Radio Button for Selection ----
 selection = st.radio("Choose Upload Type", ["Upload Student Timetable", "Upload Faculty Timetable"])
@@ -71,3 +72,58 @@ elif selection == "Upload Faculty Timetable":
         st.table(df_faculty_display)
     else:
         st.warning(f"No timetable uploaded for {faculty_name}")
+
+
+# -- Email Function -- 
+from email_utils import send_email  # Import send_email function
+
+st.subheader("📢 Timetable Notifications")
+
+# Add a toggle button
+show_options = st.expander("Notify Faculty:")
+
+with show_options:
+    to_faculty = st.selectbox("Select Faculty", ["Prof.Wasiha Tasneem"])
+    change_type = st.selectbox("Select Change Type", ["Reschedule", "Swap", "Cancel"])
+    subject_code = st.text_input("Subject Code")
+    original_day = st.text_input("Original Day")
+    original_time = st.text_input("Original Time")
+    reason = st.text_area("Reason for Change")
+
+
+    if change_type == "Reschedule":
+        new_day = st.text_input("New Day")
+        new_time = st.text_input("New Time")
+
+    if change_type == "Swap":
+        swap_with_subject = st.text_input("Swap with Subject")
+
+    if st.button("📨 Send Notification"):
+        subject = f"Timetable Update: {subject_code}"
+        message = f"""
+            <h3>{change_type} Notification 📢</h3>
+            <p><b>Subject:</b> {subject_code}</p>
+            <p><b>Original Schedule:</b> {original_day} at {original_time}</p>
+            <p><b>Reason:</b> {reason}</p>
+        """
+        if change_type == "Reschedule":
+            message += f"<p><b>New Schedule:</b> {new_day} at {new_time}</p>"
+
+        if change_type == "Swap":
+            message += f"<p><b>Swapping with:</b> {swap_with_subject}</p>"
+
+        message += "<p>Please confirm: <a href='#'>Confirm</a> | <a href='#'>Disagree</a></p>"
+
+        success = send_email(subject, message)
+
+        if success:
+            st.success("✅ Notification sent successfully!")
+        else:
+            st.error("❌ Failed to send notification")
+
+
+# -- logout button --
+if st.button("Logout"):
+    st.session_state.authenticated = False
+    st.session_state.user_email = ""
+    st.switch_page("app.py")
